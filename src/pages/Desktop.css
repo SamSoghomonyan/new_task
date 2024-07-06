@@ -1,0 +1,108 @@
+.subscribe-to-our {
+  margin: 0;
+  width: 621px;
+  position: relative;
+  font-size: inherit;
+  line-height: 41px;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.frame-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 43px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 34px;
+  color: var(--grey);
+  font-family: var(--font-teko);
+}
+.ethereum-icon,
+.litecoin-icon {
+  position: absolute;
+  width: 312px;
+  overflow: hidden;
+}
+.ethereum-icon {
+  top: 231px;
+  left: 220px;
+  height: 408px;
+  object-fit: cover;
+}
+.litecoin-icon {
+  top: 0;
+  left: 0;
+  height: 324px;
+  z-index: 1;
+}
+.ethereum-parent {
+  height: 639px;
+  width: 532px;
+  position: absolute;
+  margin: 0 !important;
+  right: -132px;
+  bottom: -444px;
+}
+.desktop,
+.frame-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-group {
+  width: 288px;
+  margin: 0 !important;
+  position: absolute;
+  top: 334px;
+  left: 958px;
+  flex-direction: row;
+}
+.desktop {
+  width: 100%;
+  position: relative;
+  background-color: var(--black);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 62px 32px;
+  box-sizing: border-box;
+  gap: 60px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.Adalina {
+  z-index: 10;
+  margin-left: -95px;
+  margin-top: 65px;
+}
+@media screen and (max-width: 1025px) {
+  .subscribe-to-our {
+    font-size: 27px;
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frame-parent {
+    gap: 21px;
+  }
+  .desktop {
+    gap: 30px;
+    padding-left: var(--padding-12xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .subscribe-to-our {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .desktop {
+    gap: 15px;
+  }
+}
